@@ -1,3 +1,4 @@
 #!/bin/bash
-podman build --userns=keep-id -t duck-generator . \
-&& podman run -d --name duck-generator-container duck-generator:latest
+# Sudo used to fix error with multiuser ids
+sudo podman build -t duck-generator . \
+&& sudo podman run -d --name duck-generator-container duck-generator:latest
