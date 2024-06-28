@@ -64,6 +64,7 @@ def save_image(image, directory, filename):
     image.save(image_path, 'PNG')
     print(f"Image saved locally at {image_path}")
 
+# Main execution logic
 if __name__ == '__main__':
     while True:
         datestamp = time.strftime('%Y-%m-%d')
@@ -73,4 +74,9 @@ if __name__ == '__main__':
         image = generate_image()
         save_image(image, directory, filename)
         logging.info(f'Saved duck at {datestamp}/{timestamp}')
-        time.sleep(CREATE_INTERVAL) # Wait for time to pass
+        time.sleep(CREATE_INTERVAL)
+
+# For viewing the generated image without saving it.
+# if __name__ == '__main__':
+#     image = generate_image()
+#     image.show()
