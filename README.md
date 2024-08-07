@@ -1,5 +1,6 @@
 # Duck Generator
-The purpose of this program is to draw images of ducks (specifically PDs) at a regular interval.
+The purpose of this program is to draw images of ducks at a regular interval.
+This was created to help relieve the symptoms of a schizophrenic man I know.
 
 ## Running Locally
 
